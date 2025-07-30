@@ -15,7 +15,7 @@ type NavbarProps = {
   settings: Content.SettingsDocument["data"];
 };
 
-export default function navbar({ settings }: NavbarProps) {
+export default function NavBar({ settings }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   return (
