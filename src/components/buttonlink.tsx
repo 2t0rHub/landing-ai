@@ -1,10 +1,11 @@
-import { PrismicNextLink, PrismicNextLinkProps } from "@prismicio/next";
+import { PrismicNextLink } from "@prismicio/next";
+import { ComponentProps } from "react";
 import clsx from "clsx";
 
 export default function ButtonLink({
   className,
   ...restProps
-}: PrismicNextLinkProps) {
+}: ComponentProps<typeof PrismicNextLink>) {
   return (
     <PrismicNextLink
       className={clsx(
