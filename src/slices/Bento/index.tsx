@@ -23,6 +23,7 @@ const Bento: FC<BentoProps> = ({ slice }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
+      {/* Heading */}
       <PrismicRichText
         field={slice.primary.heading}
         components={{
@@ -40,10 +41,12 @@ const Bento: FC<BentoProps> = ({ slice }) => {
           ),
         }}
       />
+      {/* Body */}
       <div className="mx-auto mt-6 max-w-md text-center text-balance text-slate-300">
         <PrismicRichText field={slice.primary.body} />
       </div>
 
+      {/* Cards */}
       <div className="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
         {slice.primary.cards.map((item) => {
           return (

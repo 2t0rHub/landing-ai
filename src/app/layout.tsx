@@ -1,4 +1,4 @@
-import "./globals.css"
+import "./globals.css";
 import { DM_Sans } from "next/font/google";
 
 import { PrismicPreview } from "@prismicio/next";
@@ -21,10 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={dmSans.className}>
       <body className="bg-[#070815] text-white">
+        <script
+          async
+          defer
+          src="https://static.cdn.prismic.io/prismic.js?new=true&repo=landing-ai"
+        ></script>
         <Header />
         {children}
         <Footer />
-      <PrismicPreview repositoryName={repositoryName} />
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );
