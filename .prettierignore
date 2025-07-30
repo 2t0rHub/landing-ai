@@ -1,0 +1,7 @@
+.slicemachine
+.next
+node_modules
+package-lock.json
+*.log
+.env*
+.DS_Store

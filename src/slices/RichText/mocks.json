@@ -1,0 +1,36 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Lorem ipsum",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 11
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Scelerisque in dictum non consectetur a erat nam.\n\nVel eros donec ac odio tempor. Cras pulvinar mattis nunc sed blandit libero volutpat. Enim tortor at auctor urna nunc id cursus metus. Adipiscing elit duis tristique sollicitudin nibh. Arcu vitae elementum curabitur vitae.\n\nOrci porta non pulvinar neque laoreet suspendisse. Quisque sagittis purus sit amet volutpat. Gravida cum sociis natoque penatibus et magnis dis parturient. Porta nibh venenatis cras sed. Phasellus egestas tellus rutrum tellus pellentesque eu.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
