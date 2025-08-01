@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { asImageSrc } from "@prismicio/client";
+import { asImageSrc, asText } from "@prismicio/client";
 import { PrismicText, SliceZone } from "@prismicio/react";
 
 import { createClient } from "@/prismicio";
@@ -58,7 +58,7 @@ export async function generateMetadata({
 
   // Generate metadata for the case study page
   return {
-    title: page.data.meta_title,
+    title: page.data.meta_title ?? asText(page.data.company) + " Case study",
     description: page.data.meta_description,
     openGraph: {
       images: [{ url: asImageSrc(page.data.meta_image) ?? "" }],
