@@ -11,6 +11,7 @@ import Bounded from "@/components/bounded";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import ButtonLink from "@/components/buttonlink";
 import clsx from "clsx";
+import AnimatedContent from "./animatedcontent";
 
 const icons = {
   gear: <PiGear />,
@@ -34,16 +35,18 @@ const HeroWithCodeAndCta: FC<HeroWithCodeAndCtaProps> = ({ slice }) => {
       <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/30 blur-3xl filter" />
 
       {/* Heading */}
-      <PrismicRichText
-        field={slice.primary.heading}
-        components={{
-          heading2: ({ children }) => (
-            <h2 className="text-center text-5xl font-medium text-balance md:text-7xl">
-              {children}
-            </h2>
-          ),
-        }}
-      />
+      <AnimatedContent>
+        <PrismicRichText
+          field={slice.primary.heading}
+          components={{
+            heading2: ({ children }) => (
+              <h2 className="text-center text-5xl font-medium text-balance md:text-7xl">
+                {children}
+              </h2>
+            ),
+          }}
+        />
+      </AnimatedContent>
 
       {/* Showcase */}
       <div className="mt-16 grid items-center gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:gap-0 lg:py-12">
